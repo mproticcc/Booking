@@ -1,0 +1,50 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="dots">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">⋮</td>
+  </ng-container>
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef><b>Reservation Id</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="firstName">
+    <th mat-header-cell *matHeaderCellDef><b>First Name</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="lastName">
+    <th mat-header-cell *matHeaderCellDef><b>Last Name</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="hotel">
+    <th mat-header-cell *matHeaderCellDef><b>Hotel Name</b></th>
+    <td mat-cell *matCellDef="let element">
+      {{ hotels[element.hotel - 1].name }}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dateFrom">
+    <th mat-header-cell *matHeaderCellDef><b>Date From</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.dateFrom }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="dateTo">
+    <th mat-header-cell *matHeaderCellDef><b>Date To</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.dateTo }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef><b>Delete reservation</b></th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-button *ngIf="isAdmin" (click)="onDelete(element)">
+        Delete
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

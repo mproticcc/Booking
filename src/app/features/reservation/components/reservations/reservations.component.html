@@ -1,0 +1,11 @@
+<div class="centerElement">
+  <button
+    class="buttonCloseOver btn-wrapper"
+    *ngIf="isAdmin"
+    (click)="createReservation()"
+  >
+    Create Reservation</button
+  ><br /><br />
+  <h2>Current Reservations</h2>
+  <app-table-of-reservations></app-table-of-reservations>
+</div>

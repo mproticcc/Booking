@@ -1,0 +1,129 @@
+{
+  "hotels": [
+    {
+      "name": "Westin Hotel & Resorts",
+      "description": "Thinking about visiting New York? I have a 10+-bedroom hotel that will be perfect for your stay. This comfortable rental comes with amenities such as AC, Wi-Fi, and a coffee maker. Our gym, pool, and private bathroom are yours to enjoy, as well. If you want to go to restaurants, bars, and night clubs, we're within driving distance.",
+      "location": "New York,USA",
+      "image": "assets/images/hotel1.jpg",
+      "numberOfStars": 4,
+      "id": 1
+    },
+    {
+      "name": "Le Méridien Hotels & Resorts",
+      "description": "Restaurants, bars, and night clubs in Abu Dhabi will make this a vacation to remember, and my comfortable 10+-bedroom hotel comes complete with gym, pool, and private bathroom. The AC, Wi-Fi, and a coffee maker will make you wish you could stay even longer. If you rent my Airbnb, I know you'll have a great stay in Abu Dhabi.",
+      "location": "Abu Dhabi,UAE",
+      "image": "assets/images/hotel2.jpg",
+      "numberOfStars": 3,
+      "id": 2
+    },
+    {
+      "name": "The Luxury Collection Hotels",
+      "description": "My comfortable 10+-bedroom hotel has everything you need for your Los Angeles trip. The unit comes with AC, Wi-Fi, and a coffee maker. During your stay, you can also enjoy using a convenient gym, pool, and private bathroom. Our Airbnb is within driving distance to several popular restaurants, bars, and night clubs. An ideal base to explore Los Angeles.",
+      "location": "Los Angeles,USA",
+      "image": "assets/images/hotel3.jpg",
+      "numberOfStars": 5,
+      "id": 3
+    },
+    {
+      "name": "Sheraton Hotels & Resorts",
+      "description": "Stay in this comfortable hotel and live like a true local in Belgrade. We're within driving distance to restaurants, bars, and night clubs. Our rental comes with 10+ bedrooms, and a gym, pool, and private bathroom that you're free to use any time. AC, Wi-Fi, a coffee maker -- we've got everything you need.",
+      "location": "Belgrade,Serbia",
+      "image": "assets/images/hotel4.jpg",
+      "numberOfStars": 4,
+      "id": 4
+    },
+    {
+      "name": "St. Regis Hotels & Resorts",
+      "description": "Want to visit Kairo without breaking the bank? We have exactly what you're looking for. Our comfortable hotel comes with 10+ bedrooms, gym, pool, private bathroom, AC, Wi-Fi, and a coffee maker, and we're within driving distance to restaurants, bars, and night club",
+      "location": "Kairo,Egypt",
+      "image": "assets/images/hotel5.jpg",
+      "numberOfStars": 4,
+      "id": 5
+    },
+    {
+      "name": "Inn Of Dreams",
+      "description": "Thinking about visiting Paris? I have a 10+-bedroom hotel that will be perfect for your stay. This comfortable rental comes with amenities such as AC, Wi-Fi, and a coffee maker. Our gym, pool, and private bathroom are yours to enjoy, as well. If you want to go to restaurants, bars, and night clubs, we're within driving distance.",
+      "location": "Paris,France",
+      "image": "assets/images/hotel6.jpg",
+      "numberOfStars": 3,
+      "id": 6
+    },
+    {
+      "name": "Marriott Hotels",
+      "description": "Restaurants, bars, and night clubs in Milano will make this a vacation to remember, and my comfortable 10+-bedroom hotel comes complete with gym, pool, and private bathroom. The AC, Wi-Fi, and a coffee maker will make you wish you could stay even longer. If you rent my Airbnb, I know you'll have a great stay in Milano.",
+      "location": "Milano,Italy",
+      "image": "assets/images/hotel7.jpg",
+      "numberOfStars": 5,
+      "id": 7
+    },
+    {
+      "name": "The Ritz-Carlton Hotels & Resorts",
+      "description": "My comfortable 10+-bedroom hotel has everything you need for your Istanbul trip. The unit comes with AC, Wi-Fi, and a coffee maker. During your stay, you can also enjoy using a convenient gym, pool, and private bathroom. Our Airbnb is within driving distance to several popular restaurants, bars, and night clubs. An ideal base to explore Istanbul.",
+      "location": "Istanbul,Turkey",
+      "image": "assets/images/hotel8.jpg",
+      "numberOfStars": 4,
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Mihailo",
+      "lastName": "Protic",
+      "email": "mihailo@gmail.com",
+      "password": "123",
+      "role": "admin",
+      "currentCreation": "2023-05-02T10:57:08.430Z"
+    },
+    {
+      "id": 2,
+      "firstName": "Nikola",
+      "lastName": "Nikolic",
+      "email": "nikola@gmail.com",
+      "password": "123",
+      "role": "user",
+      "currentCreation": "2023-05-02T10:58:01.113Z"
+    }
+  ],
+  "reservations": [
+    {
+      "firstName": "Mihailo",
+      "lastName": "Protic",
+      "dateFrom": "2022-12-24",
+      "dateTo": "2023-01-06",
+      "hotel": 3,
+      "id": 1,
+      "deletedAt": null
+    },
+    {
+      "firstName": "Luka",
+      "lastName": "Markovic",
+      "dateFrom": "2022-12-16",
+      "dateTo": "2023-01-01",
+      "hotel": 4,
+      "id": 2,
+      "deletedAt": null
+    },
+    {
+      "firstName": "Niko",
+      "lastName": "Belic",
+      "dateFrom": "2023-01-19",
+      "dateTo": "2023-01-22",
+      "hotel": 2,
+      "id": 5,
+      "deletedAt": null
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "name": "hotels",
+      "path": "hotels"
+    },
+    {
+      "id": 2,
+      "name": "reservations",
+      "path": "reservations/table"
+    }
+  ]
+}

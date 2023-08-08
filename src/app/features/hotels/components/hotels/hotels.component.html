@@ -1,0 +1,9 @@
+<app-search></app-search>
+<div class="order">
+  <app-hotel-card *ngFor="let hotel of hotels" [hotel]="hotel"></app-hotel-card>
+  <div *ngIf="hotelsCounter === 0">
+    <app-not-found
+      text="THERE ARE NO HOTELS WITH THAT LOCATION"
+    ></app-not-found>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="wrapper-overview" *ngIf="hotel; else elseBlock">
+  <div class="main-content">
+    <h1>{{ hotel?.name }} - {{ hotel?.location }}</h1>
+    <img [src]="hotel?.image" [alt]="hotel?.name" />
+  </div>
+
+  <div class="container">
+    <br />
+    <p>
+      Number of stars: {{ hotel.numberOfStars | starsMaker }} (<b>{{
+        hotel.numberOfStars
+      }}</b
+      >)
+    </p>
+    <p>
+      {{ hotel?.description }}
+    </p>
+    <button [routerLink]="['']" class="buttonCloseOver">Close</button>
+  </div>
+</div>
+<ng-template #elseBlock>
+  <app-not-found text="ERROR, HOTEL DOES NOT EXIST"></app-not-found
+></ng-template>

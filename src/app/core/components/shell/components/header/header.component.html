@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <h1>Booking.com</h1>
+  <div class="navigation">
+    <div class="navigation-links" *ngFor="let link of links">
+      <button [routerLinkActive]="['active']" [routerLink]="[link.path]">
+        <span>{{ link.name }}</span>
+      </button>
+    </div>
+
+    <button class="right" (click)="logoutUser()" matTooltip="Logout ">
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+  </div>
+</div>
